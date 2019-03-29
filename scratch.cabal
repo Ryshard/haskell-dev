@@ -1,0 +1,28 @@
+cabal-version: 1.12
+name:           scratch
+version:        1.0.0
+category:       Other
+homepage:
+bug-reports:
+author:
+maintainer:
+copyright:      Copyright (c) 2017-2018 Future Finance Loan Corporation Limited
+license:        AllRightsReserved
+build-type:     Simple
+extra-source-files:
+    stack.yaml
+
+executable hello
+  main-is: Hello.hs
+  hs-source-dirs:
+      app
+  default-extensions: OverloadedStrings
+  ghc-options: -Wall -O2 -threaded -rtsopts "-with-rtsopts=-N -H128m"
+  build-depends:
+     base >=4.8 && <5
+    , bytestring
+    , containers
+    , scientific
+    , text
+    , vector
+  default-language: Haskell2010
